@@ -1,0 +1,69 @@
+const library_one = {title:"To kill a mocking bird", author:"harper lee", year:"2018",
+    genre:"poetry"
+};
+console.log(library_one[title])
+
+//const library_two = {title:"We are at it again", author:"bola adekoya", year:"1990",
+    genre:"drama"
+}
+
+const library_three = {title:"The gods are angry", author:"seun davies", year:"2022",
+    genre:"literature"
+}
+
+const library_four = {title:"Our husbands have gone mad again", author:"uche francis",
+    year:"1970", genre:"literature"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const library = {
+   myTitle: {
+       title1: "To kill a mocking bird"
+       title2: "We are at it again"
+       title3: "The gods are angry"
+       title4:"Our husbands have gone mad again"
+   }
+   myAuthor:{
+       author1:"harper lee"
+       author2:"bola adekoya"
+       author3:"seun davies"
+       author4:"uche francis"
+   }
+   {
+   myYear:{
+   year1:"2018"
+   year2:"1990"
+   year3:"2022"
+   yeaer4:"1970"
+   }
+   myGenre:{
+       genre1:"literature"
+       genre2:"art"
+       genre3:"play"
+       genre4:"poetry"
+   }
+   
+}
+  
+let x = mySearchBooks(author1);
+document.getElementsById("try").innerHTML = x;
+
+function
+mySearchBooks(author1) {returnauthor1}
+
+functionSearchBooks(author1,author2) {return author1 * author2;
+
+}
+
+title, author, year, genre

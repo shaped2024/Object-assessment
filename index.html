@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport content=width=device-width, initial scale=1.0"/>
+        <title>JS object assessment</title>
+    </head>
+
+    <body>
+        <script>
+           // document.write("enter your name");
+            //console.log("learning javascript");
+            
+            //const book = ["bola","niyi",1999,"friction","okay",1222]
+            //console.log(book);
+
+            const book = {
+                title: "To kill a Mocking bird",
+                 author: "Harper Lee",
+                year: 1960,
+                genre: "Friction"
+             }
+             console.log (book);
+
+             const library = {
+                title: ["Tough times dont last","We are at it again","The gods are not to be blamed","campus gist",
+                "practice make perferct","training time","practice makes pererct","lets go again","good boys",
+                "women are the strongest"],
+
+                author: ["John Doe","Oyinye Nnamdi","Adams Shawn","Sydney Lois","Ayo Adesanya","Chinue Achebe",
+                "Wole Soyinka","Lilian Van","Sony Stone","Jeremiah Gyang"],
+
+                Year: [2014,1960,2022,2018,1999,1888,1989,1960,2017,1985],
+
+                genre: ["literature","art","science","friction","art","poetry","science","science","art","poetry"],
+
+             }
+
+             console.log (library);
+
+                 title: ["Tough times dont last","We are at it again","The gods are not to be blamed","campus gist",
+                "practice make perferct","training time","practice makes pererct","lets go again","good boys",
+                "women are the strongest"];
+
+                author: ["John Doe","Oyinye Nnamdi","Adams Shawn","Sydney Lois","Ayo Adesanya","Chinue Achebe",
+                "Wole Soyinka","Lilian Van","Sony Stone","Jeremiah Gyang"];
+
+                Year: [2014,1960,2022,2018,1999,1888,1989,1960,2017,1985];
+
+                genre: ["literature","art","science","friction","art","poetry","science","science","art","poetry"],
+
+
+              function SearchBooks(query)
+               {
+                query = query.toLower();
+
+                const filteredBooks = library.filter(book =>
+                    book.title.toLowerCase().includes(query) ||
+                    book.author.toLowerCase().includes(query));
+
+                return filteredBooks;
+              }
+
+              const userQuery = prompt("Enter a book title or author to search:");
+
+              const results = SearchBooks(query);
+
+              if (results.length > 0) {
+                console.log("Books Found");
+                results.forEach(book =>
+                console.log('Title: ${book.title},Author: ${book.author,Year: ${book.year},Genre: ${genre.book}}'));    
+              }
+              else {
+                console.log("No Books Found.")
+
+              }
+
+        </script>   
+    </body>
+
+</html> 
